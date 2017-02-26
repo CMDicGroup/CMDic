@@ -1,4 +1,4 @@
-package com.tests4geeks.tutorials.model;
+package com.cmd.db.model;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 

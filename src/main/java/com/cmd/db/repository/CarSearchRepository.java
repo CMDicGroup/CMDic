@@ -1,4 +1,4 @@
-package com.tests4geeks.tutorials.repository;
+package com.cmd.db.repository;
 
 import java.util.Collection;
 
@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
 
-import com.tests4geeks.tutorials.model.Car;
+import com.cmd.db.model.Car;
 
 @Repository
 public class CarSearchRepository {

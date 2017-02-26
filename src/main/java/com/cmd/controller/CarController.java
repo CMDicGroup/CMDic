@@ -1,4 +1,4 @@
-package com.tests4geeks.tutorials.controllers;
+package com.cmd.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,10 +7,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
-import com.tests4geeks.tutorials.model.Car;
-import com.tests4geeks.tutorials.repository.CarMongoRepository;
-import com.tests4geeks.tutorials.repository.CarSearchRepository;
+import com.cmd.db.model.Car;
+import com.cmd.db.repository.CarMongoRepository;
+import com.cmd.db.repository.CarSearchRepository;
 
 @Controller
 public class CarController {
@@ -23,7 +24,7 @@ public class CarController {
 	
 	@RequestMapping("/home")
 	public String home(Model model) {
-		model.addAttribute("carList", carRepository.findAll());
+		//model.addAttribute("carList", carRepository.findAll());
 		return "home";
 	}
 	
